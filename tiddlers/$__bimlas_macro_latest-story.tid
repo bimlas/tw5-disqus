@@ -1,0 +1,29 @@
+created: 20190214200542835
+modified: 20190215131654641
+module-type: macro
+tags: $:/tags/Macro
+title: $:/bimlas/macro/latest-story
+type: application/javascript
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+"use strict";
+
+exports.name = "latest-story";
+
+exports.params = [];
+
+/*
+Run the macro
+*/
+exports.run = function() {
+  var history = $tw.wiki.getTiddlerData('$:/HistoryList'),
+    story = $tw.wiki.getTiddler('$:/StoryList').getFieldList('list'),
+    stillOpenedHistoryTitles = history.filter(data => story.indexOf(data.title) !== -1),
+    lastOpened = stillOpenedHistoryTitles.pop().title;
+  return lastOpened;
+};
+
+})();

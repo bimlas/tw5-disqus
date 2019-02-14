@@ -1,0 +1,9 @@
+created: 20190214211837916
+modified: 20190215135746820
+tags: $:/tags/ViewTemplate
+title: $:/bimlas/disqus/template
+type: text/vnd.tiddlywiki
+
+<$reveal type="match" default=<<currentTiddler>> text=<<latest-story>> >
+  <$macrocall $name="disqus" current=<<currentTiddler>>/>
+</$reveal>
