@@ -1,0 +1,14 @@
+created: 20190217085244730
+modified: 20190217093135089
+tags: $:/tags/Stylesheet
+title: $:/bimlas/disqus/stylesheet
+type: text/css
+
+.bimlas-disqus-toggle {
+  display: block;
+	width: 100%;
+	text-align: right;
+}
+.bimlas-disqus-toggle img {
+  height: 1rem;
+}
