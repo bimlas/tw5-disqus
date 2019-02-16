@@ -1,5 +1,5 @@
 created: 20190215223817427
-modified: 20190215232132196
+modified: 20190216151215376
 module-type: macro
 tags: $:/tags/Macro
 title: $:/bimlas/disqus/macro/counter
@@ -25,17 +25,13 @@ exports.run = function(current) {
 
   /* Remove current Disqus counter*/
   var current_counter = document.getElementById("dsq-count-scr");
-  if (current_counter !== null) {
-    d.body.removeChild(current_counter);
+  if (current_counter === null) {
+    s.src = 'https://bimlas.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    s.setAttribute('async', '');
+    d.body.appendChild(s);
   }
-
-  s.src = 'https://bimlas.disqus.com/count.js';
-  s.id = 'dsq-count-scr';
-  // TODO: Is it downloaded only once?
-  s.setAttribute('async', true);
-  d.body.appendChild(s);
-
-  return '<span class="disqus-comment-count" data-disqus-url="' + 'https://bimlas.gitlab.io/' + encodeURIComponent(current) + '"></span>'
+  return '(<span class="disqus-comment-count" data-disqus-url="' + 'https://bimlas.gitlab.io/' + encodeURIComponent(current) + '">?</span>)';
 };
 
 })();
