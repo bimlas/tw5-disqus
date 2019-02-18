@@ -1,0 +1,8 @@
+tags: $:/tags/ControlPanel
+title: $:/bimlas/disqus/settings/settings
+type: text/vnd.tiddlywiki
+caption: Disqus
+
+|[[Website shortname (in Disqus URL)|$:/config/bimlas/disqus/shortname]]<blockquote>''Needs restart''<br/>If you can't find it, [[have a look at the help|https://help.disqus.com/installation/whats-a-shortname]]</blockquote> |<$edit-text tiddler="$:/config/bimlas/disqus/shortname" default="" tag="input"/><br/>//For example https://SHORTNAME.disqus.com/ // |
+|[[Website URL|$:/config/bimlas/disqus/url]] |<$edit-text tiddler="$:/config/bimlas/disqus/url" default="" tag="input"/><br/>//For example https://me.github.io/ (don't forget to add trailing slash) or https://tiddlywiki.com/empty.html // |
+|[[Counter default text|$:/config/bimlas/disqus/counter-default]]<blockquote>Default text if tiddler thread has not yet been created (probably does not contain any comments) or can not connect to Disqus</blockquote> |<$edit-text tiddler="$:/config/bimlas/disqus/counter-default" default="" tag="input"/> |

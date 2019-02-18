@@ -33,13 +33,12 @@ Display Disqus comments
 
 		/* Load Disqus */
 		window.disqus_config = function() {
-			this.page.url = 'https://bimlas.gitlab.io/' + encodeURIComponent(current);
-			/* $tw.wiki.getTiddler('$:/info/url/full').getFieldString('text') */
+			this.page.url = $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/url') + encodeURIComponent(current);
 		};
 		/* TODO: Async? See counter */
-		s.src = 'https://bimlas.disqus.com/embed.js';
+		s.src = 'https://' + $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/shortname') + '.disqus.com/embed.js';
 		s.id = 'DISQUS-LOADER';
-		s.setAttribute('data-timestamp',+new Date());
+		s.setAttribute('data-timestamp', (new Date()).toString());
 		(d.head || d.body).appendChild(s);
 
 		return '<div id="disqus_thread"></div>'
