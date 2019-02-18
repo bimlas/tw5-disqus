@@ -32,6 +32,14 @@ Display Disqus comments counter
 			s.setAttribute('async','');
 			d.body.appendChild(s);
 		}
+
+		/* Update newly added counters */
+		$tw.hooks.addHook("th-page-refreshed", function() {
+			if (window.DISQUSWIDGETS) {
+				window.DISQUSWIDGETS.getCount({reset: true});
+			}
+		});
+
 		return '(<span class="disqus-comment-count" data-disqus-url="' + $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/url') + encodeURIComponent(current) + '">' + $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/counter-default') + '</span>)';
 	};
 
