@@ -1,7 +1,15 @@
 tags: $:/tags/ControlPanel
-title: $:/bimlas/disqus/settings/settings
+title: $:/plugins/bimlas/disqus/settings/settings
 type: text/vnd.tiddlywiki
 caption: Disqus
+
+<$list filter="[[$:/ControlPanel]!is[current]]">
+    Configuration for the plugin can be done from within the Disqus tab in the [[ControlPanel|$:/ControlPanel]] as well.
+</$list>
+<$list filter="[[$:/ControlPanel]is[current]]">
+    Configuration for the [[Disqus plugin|$:/plugins/bimlas/disqus]].
+</$list>
+
 
 |[[Website shortname (in Disqus URL)|$:/config/bimlas/disqus/shortname]]<blockquote>''Needs restart''<br/>If you can't find it, [[have a look at the help|https://help.disqus.com/installation/whats-a-shortname]]</blockquote> |<$edit-text tiddler="$:/config/bimlas/disqus/shortname" default="" tag="input"/><br/>//For example https://SHORTNAME.disqus.com/ // |
 |[[Website URL|$:/config/bimlas/disqus/url]] |<$edit-text tiddler="$:/config/bimlas/disqus/url" default="" tag="input"/><br/>//For example https://me.github.io/ (don't forget to add trailing slash) or https://tiddlywiki.com/empty.html // |
