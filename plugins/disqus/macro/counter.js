@@ -1,7 +1,7 @@
 /*\
 module-type: macro
 tags: $:/tags/Macro
-title: $:/bimlas/disqus/macro/counter
+title: $:/plugins/bimlas/disqus/macro/counter
 type: application/javascript
 
 Display Disqus comments counter

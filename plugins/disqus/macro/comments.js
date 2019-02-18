@@ -1,7 +1,7 @@
 /*\
 module-type: macro
 tags: $:/tags/Macro
-title: $:/bimlas/disqus/macro/comments
+title: $:/plugins/bimlas/disqus/macro/comments
 type: application/javascript
 
 Display Disqus comments
