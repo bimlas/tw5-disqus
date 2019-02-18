@@ -23,14 +23,14 @@ Display Disqus comments counter
 	Run the macro
 	*/
 	exports.run = function(current) {
-		var d = document,s = d.createElement('script');
 
-		var current_counter = document.getElementById("dsq-count-scr");
-		if(current_counter === null) {
-			s.src = 'https://' + $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/shortname') + '.disqus.com/count.js';
-			s.id = 'dsq-count-scr';
-			s.setAttribute('async','');
-			d.body.appendChild(s);
+		/* Get counter loader */
+		if(document.getElementById("dsq-count-scr") === null) {
+			var loader = document.createElement('script');
+			loader.src = 'https://' + $tw.wiki.getTiddlerText('$:/config/bimlas/disqus/shortname') + '.disqus.com/count.js';
+			loader.id = 'dsq-count-scr';
+			loader.setAttribute('async','');
+			document.head.appendChild(loader);
 		}
 
 		/* Update newly added counters */
