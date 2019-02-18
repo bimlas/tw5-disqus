@@ -1,0 +1,23 @@
+image: node
+
+variables:
+  TIDDLYWIKI_PLUGIN_PATH: ./plugins
+
+pages:
+  script:
+    - npm install -g tiddlywiki
+    # Generate as index.html: single HTML demo page
+    - tiddlywiki --build index
+    # Generate as .json file: drag-n-drop installer
+    - tiddlywiki --render '$:/plugins/bimlas/disqus' tw5-disqus.json text/plain '$:/core/templates/json-tiddler'
+    # Serve a compressed version to speed up the loading
+    # https://gitlab.com/gitlab-org/gitlab-pages/merge_requests/25
+    - gzip --recursive --keep output
+    # GitLab needs 'public' dirname for deploy
+    # https://gitlab.com/gitlab-org/gitlab-ee/issues/1719
+    - mv output public
+  artifacts:
+    paths:
+    - public
+  only:
+    - master
