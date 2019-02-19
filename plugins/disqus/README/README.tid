@@ -5,7 +5,7 @@ type: text/vnd.tiddlywiki
 ! Disqus comments
 
 Use this plugin to give your visitors the opportunity to comment on your
-tiddlers without changing the wiki itself.
+tiddlers without changing the wiki itself. See the bottom of this tiddler for example.
 
 * https://gitlab.com/bimlas/tw5-disqus (main repository)
 * https://github.com/bimlas/tw5-disqus (mirror, ''please add a star if you like the plugin'')
