@@ -8,6 +8,15 @@ For details, see the link:{demo-page}[demo page].
 * https://gitlab.com/bimlas/tw5-disqus (official repository)
 * https://github.com/bimlas/tw5-disqus (mirror, please give a star if you like it)
 
+What others say about it?
+
+_____
+As a TiddlyWiki developer for near 10 years I have attempted 3 times to do
+what you did and failed. I had come to the conclusion that Disqus comments
+were just never gonna happen in TiddlyWiki's. Well done! -
+https://gitlab.com/bimlas/tw5-disqus/issues/1[sukima]
+_____
+
 == How to install?
 
 === Drag-n-drop
