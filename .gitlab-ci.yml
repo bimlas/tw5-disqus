@@ -3,7 +3,18 @@ image: node
 variables:
   TIDDLYWIKI_PLUGIN_PATH: ./plugins
 
+stages:
+  - test
+  - pages
+
+test:
+  stage: test
+  script:
+    - npm install -g tiddlywiki
+    - tiddlywiki test
+
 pages:
+  stage: pages
   script:
     - npm install -g tiddlywiki
     # Generate as index.html: single HTML demo page
