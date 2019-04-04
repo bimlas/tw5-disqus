@@ -46,6 +46,13 @@ Display Disqus comments
 		loader.setAttribute('data-timestamp', (new Date()).toString());
 		(document.head || document.body).appendChild(loader);
 
+		$tw.utils.nextTick(function() {
+			$tw.rootWidget.dispatchEvent({
+				type: "disqus-did-insert-element",
+				target: document.getElementById(THREAD_ID)
+			});
+		});
+
 		return '<div id="' + THREAD_ID + '"></div>'
 	};
 
