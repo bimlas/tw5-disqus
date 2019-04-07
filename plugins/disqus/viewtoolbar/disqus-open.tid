@@ -9,7 +9,7 @@ list-before: $:/core/ui/Buttons/info
 <$list filter="[all[current]subfilter{$:/config/bimlas/disqus/filter}]" variable="doNotOverrideCurrent">
 	<$button tooltip="View Disqus comments" aria-label="disqus comments" class=<<tv-config-toolbar-class>> set="$:/state/bimlas/disqus" setTo=<<currentTiddler>> >
 		<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-			{{$:/core/images/add-comment}}
+			{{$:/plugins/bimlas/disqus/images/disqus.svg}}
 		</$list>
 		<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
 			<span class="tc-btn-text">
