@@ -4,7 +4,7 @@
 	"author": "bimlas",
 	"version": "1.1.2",
 	"core-version": ">=5.1.18",
-	"source": "https://gitlab.com/bimlas/tw5-disqus",
+	"source": "https://github.com/bimlas/tw5-disqus",
 	"plugin-type": "plugin",
 	"list": "README/README README/setup settings/settings README/FAQ README/CHANGELOG"
 }

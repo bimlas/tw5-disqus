@@ -1,0 +1,12 @@
+{
+  "name": "tw5-disqus",
+  "author": "bimlas",
+  "scripts": {
+    "build": "npm run build:html; npm run build:json",
+    "build:html": "TIDDLYWIKI_PLUGIN_PATH=plugins tiddlywiki --build index",
+    "build:json": "TIDDLYWIKI_PLUGIN_PATH=plugins tiddlywiki --render '$:/plugins/bimlas/disqus' tw5-disqus.json text/plain '$:/core/templates/json-tiddler'"
+  },
+  "dependencies": {
+    "tiddlywiki": "^5.3.3"
+  }
+}

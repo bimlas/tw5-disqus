@@ -1,12 +1,11 @@
-:demo-page: https://bimlas.gitlab.io/tw5-disqus
-:json: https://bimlas.gitlab.io/tw5-disqus/tw5-disqus.json
+:demo-page: https://bimlas.github.io/tw5-disqus
+:json: https://bimlas.github.io/tw5-disqus/tw5-disqus.json
 
 = Disqus comments plugin for TiddlyWiki 5
 
 For details, see the link:{demo-page}[demo page].
 
-* https://gitlab.com/bimlas/tw5-disqus (official repository)
-* https://github.com/bimlas/tw5-disqus (mirror, please give a star if you like it)
+* https://github.com/bimlas/tw5-disqus (please give a star if you like the plugin)
 
 == What others say about it?
 
