@@ -6,13 +6,24 @@ type: text/vnd.tiddlywiki
 
 Before you using the plugin, you need to create the Disqus forum to your wiki.
 
-* Make yourself a [[Disqus account|https://disqus.com/]] if you don't already have one.
+If you have no Disqus account, start with the registration:
+
+* Create a [[Disqus account|https://disqus.com/]]
 * When it ask about "What would you like to do with Disqus?", select "I want to install Disqus on my site"
+
+If you already have Disqus account, log in to Disqus and create a new forum:
+
+* Go to https://disqus.com/admin/create/ to create a new forum
+
+In both case continue with the following steps:
+
 * Fill out the form and copy the shortname (unique Disqus URL) under the website name to the [[settings of the plugin|$:/plugins/bimlas/disqus/settings/settings]]
-* Select your Disqus plan (free / paid)
-* You can skip the platform selection (Wordpress, Blogger, etc.) and continue with configuration
-* Fill out the website URL and copy to the [[settings of the plugin|$:/plugins/bimlas/disqus/settings/settings]]
-* Complete the setup and refresh your wiki
-* If not works, you probably forgot to press "Dismiss Setup" on the "Setup Complete!" page on Disqus
+* Select your Disqus plan (basic / paid)
+* Hit "install manually with Universal Code" at the bottom of the platform selection (Wordpress, Blogger, etc.)
+* We don't need the code, continue by clicking on "Configure" button at the bottom of the page
+* Fill out the form and copy website URL to the [[settings of the plugin|$:/plugins/bimlas/disqus/settings/settings]]
+** It does not have to match your wiki's URL but it behaves like an ID, so you can move your wiki to a new URL or download as HTML without loosing the comments
+* Complete the setup, don't forget to click on "Dismiss Setup" at the bottom of "Setup Complete!" page
+* Save and refresh your wiki, the plugin should work now
 
 //Select the next tab to continue.//
